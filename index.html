@@ -13,7 +13,7 @@
 <body>
     <header>
         <h1>
-            <a href="https://www.naver.com/" target="_blank"><span>NAVER</span></a>
+            <a class= "h_logo" href="https://www.naver.com/" target="_blank"><span>NAVER</span></a>
         </h1>
     </header>
 
@@ -46,7 +46,7 @@
                 
                 <!-- 비밀번호 재확인 -->
                 <fieldset class="row_group">
-                    <label for="password">비밀번호 재확인</label>
+                    <label for="password_retype">비밀번호 재확인</label>
                     <span class="full_span" tabindex="3">
                         <input type="password" id="password_retype">
                         <span>안전</span>
@@ -750,18 +750,18 @@
             
                         </select>
                     </span>
-                    <span class="span_with_btn">
+                    <span class="span_with_btn" tabindex="-1">
                         <input type="tel" id="phone_number" placeholder="전화번호 입력" tabindex="9">
-                        <button class="btn">인증번호 받기</button>
+                        <button class="btn"  tabindex="10">인증번호 받기</button>
                     </span>
-                    <span class="full_span" tabindex="10">
+                    <span class="full_span" tabindex="11">
                         <input type="text" placeholder="인증번호를 입력하세요">
                     </span>
                     <span class="message hide essential_msg">필수 정보입니다.</span>
                 </fieldset>
             </section>
 
-            <button class="btn" id="join_btn">가입하기</button>
+            <button class="btn" id="join_btn" tabindex="12">가입하기</button>
         </div>
     </main>
 

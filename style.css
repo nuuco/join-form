@@ -13,18 +13,22 @@ body {
     font-family: Dotum,'돋움',Helvetica,sans-serif;
 }
 
-header h1 {
+h1 {
     text-align: center;
 }
 
-span:focus-within:not(.span_with_btn) {
+h1 > .h_logo {
+    display: inline-block;
+    width: 249px;
+    height: 44px;
+    background-image: url("./NAVER\ Logo_Green.png");
+}
+
+
+main span:focus-within:not(.span_with_btn) {
     border: 1px solid var(--main_color);
 }
 
-.span_with_btn > input:focus {
-    border: 1px solid var(--main_color);
-    outline: 0;
-}
 
 .wrap {
     width: 460px;
@@ -105,10 +109,15 @@ span.behind_id {
     margin-right: 8px;
 }
 
+.span_with_btn > input:focus {
+    border: 1px solid var(--main_color);
+}
+
 .span_with_btn > button {
     height: 100%;
     flex: 3;
 }
+
 
 
 .message {
