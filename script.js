@@ -25,11 +25,11 @@ function idValidator(str) {
 
 elInputUserName.addEventListener('keyup', function(event) {
     if(idValidator(elInputUserName.value)){
-        elIdMsg_failure.classList.remove('hide');
-        elIdMsg_success.classList.add('hide');
-    }else {
         elIdMsg_failure.classList.add('hide');
-        elIdMsg_success.classList.remove('hide');
+        elIdMsg_success.classList.remove('hide'); //성공 메시지 보여줌
+    }else if (!idValidator(elInputUserName.value)) {
+        elIdMsg_failure.classList.remove('hide'); //실패 메시지 보여줌
+        elIdMsg_success.classList.add('hide');
     }
 })
 
